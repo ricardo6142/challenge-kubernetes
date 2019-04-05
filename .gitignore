@@ -1,0 +1,10 @@
+*devops-getup.json
+*.terraform
+*.tfstate*
+*inventory.cfg
+*.retry
+*.pem
+*.csr
+*.kubeconfig
+*encryption-config.yaml
+

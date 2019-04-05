@@ -1,0 +1,4 @@
+token: b0f7b8.8d1767gtamclpy5q
+init_opts: "--apiserver-cert-extra-sans 35.203.145.77"
+insecure_registries: []
+

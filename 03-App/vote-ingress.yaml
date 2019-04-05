@@ -1,0 +1,23 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  namespace: vote
+  name: ingress-vote
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  rules:
+  - host: vote.getup.com
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: vote
+          servicePort: 80
+  - host: result.getup.com
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: result
+          servicePort: 80
